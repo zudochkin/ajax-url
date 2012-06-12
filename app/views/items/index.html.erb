@@ -1,0 +1,9 @@
+<h1>Items</h1>
+
+<div id="items">
+  <%= render @items %>
+</div>
+
+<div class="row" id="pagination">
+  <div class="span9"><%= paginate @items, :remote => true %></div>
+</div>

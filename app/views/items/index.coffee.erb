@@ -1,0 +1,7 @@
+params = page: <%= params[:page] %>
+
+location.hash = $.param params
+
+$('#pagination').html '<%= j (paginate @items, :remote => true) %>'
+
+$('#items').html '<%= j(render @items) %>'
